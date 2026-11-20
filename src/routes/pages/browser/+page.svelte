@@ -46,7 +46,7 @@
                         <img src={tab.icon} />
                     {/if}-->
                     <div class="tab-fav">
-                        <img src={tab.icon === undefined ? 'img/noicon.png' : tab.icon}/>
+                        <img src={tab.icon === undefined ? '../../img/noicon.svg' : tab.icon}/>
                     </div>
                     <span>{tab.name}</span>
                     <button class="closetabbtn jam jam-close" on:click={() => removeTab(index)} disabled="{tabs.length <= 1}"></button>

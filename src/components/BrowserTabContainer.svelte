@@ -43,7 +43,7 @@
           submittedvalue = newtabinputvalue;
         } 
     }
-    $: icon = submittedvalue == null ? '/img/newtab.svg' : icon;
+    $: icon = submittedvalue == null ? '../../img/newtab.svg' : icon;
 </script>
 
 <div class={active == true ? 'flex flex-col w-full h-full' : 'binactive flex flex-col w-full h-full'}>
@@ -60,7 +60,7 @@
     </div>
     {#if submittedvalue == null}
 	    <div class="newtab-cont">
-            <img class="newtab-logo" src="/img/pickle.svg">
+            <img class="newtab-logo" src="../../img/pickle.svg">
             <div class='newtab-inputcontainer'>
                 <input class='newtab-input' on:keyup={handleNewTabSubmit} bind:value={newtabinputvalue}/>
             </div>
