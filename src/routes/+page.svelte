@@ -1,1 +1,9 @@
-<h1>Welcome to EduLive, a school app that is transforming the education spectrum!</h1>
+<script>
+    import { onMount } from 'svelte';
+    import { goto } from '$app/navigation';
+    import { base } from '$app/paths';
+
+    onMount(() => {
+        goto(`${base}/pages/browser/`, { replaceState: true });
+    });
+</script>
